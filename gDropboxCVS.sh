@@ -64,13 +64,14 @@ FIX_PERMISSIONS="off"
 # END OF CONFIG
 
 #TODO
-# check the existence of default folders
-
+# check the existence of default folders / folders creation
+# new option: choose if wants to include hidden files
+# lookup for Dropbox folder automatically
 
 
 #beggining
 
-#Ask the user what he want
+#Ask the user what he want to do
 operation=$(zenity --list \
                    --title="Menu" \
                    --text="Welcome to gDropboxCVS\n\nPlease, choose an operation"  \

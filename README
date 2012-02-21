@@ -1,34 +1,42 @@
-# gDropboxCVS v0.1 
-# distributed under GPL v3.0 http://www.gnu.org/copyleft/gpl.html 
-# You are free to coppy, distribute, modify, bla, bla, bla...(you know all that stuff)
-#
-# gDropboxCVS it's a simple script to use in combination with a Dropbox account to have 
-# a minimalistic control version system for anyone with a Gnome Desktop. gDropbox it's perfect
-# for individual projects or shared with only few people.
-# 
-# Use sample:
-# Mike is a developer whom uses two computers and he would like to keep a project syncronized
-# between both. He could use a dropbox folder directly but he doesn't want to upload each change,
-# only when he is sure wants to push the changes to other computer. 
-# 
-# So, after working on his project, Mike launches gDropboxCVS and select "upload changes to dropbox"
-# the software syncronizes development and dropbox folder (just modified files). Later, at home, Mike launches gDropboxCVS
-# and selects "download changes".
-#
-# If Mike wants to restore some file he can just look for it in his dropbox folder and overwrite the modified.
-# He some changes are pushed he could go to Dropbox webinterface and look up for the desired version 
-# 
+gDropboxCVS v0.1 
 
+gDropboxCVS it's a simple script to use in combination with a Dropbox account to have 
+a minimalistic control version system for anyone with a Gnome Desktop. gDropbox it's perfect
+for individual projects or shared with only few people.
 
-# INSTALL
-# 0. gDropboxCVS needs zenity in order to work. 
-#    To install zenity in ubuntu: $sudo apt-get install zenity
-# 1. Be sure your Dropbox account is correctly configured.
-# 2. Create a "cvs" folder under your Dropbox folder (you can choose other name).
-# 3. (optional) Edit this file and specify your svn folder, local root folder and project nome
-#    so you won't need to specify them each run.
+Usage sample:
+Mike is a developer whom uses two computers and he would like to keep a project syncronized
+between both. So, after working on his project, Mike launches gDropboxCVS and select "upload 
+changes to dropbox" the software syncronizes development and dropbox folder (just the modified 
+files). Later, at home, Mike launches gDropboxCVS and selects "download changes". Both folders 
+are now syncronized.
 
-# Hint: Put this script under cvs folder and you can use the same config in all computers
+If Mike wants to restore some file he can just look up for it in his dropbox folder and 
+overwrite the local version. But if mike had uploaded the changes to Dropbox he could still
+open Dropbox web interface and look up for the desired version using "Previous versions" menu. 
 
-# USAGE
-# Just run gDropboxCVS clicking on it and follow the instructions
+But why we need to push changes? Why can't I use Dropbox folder directly? 
+By the same reason other developers use SVN or GIT, we edit a lot of times same files when
+developing and we don't want to upload each change. Sometimes we want to revert changes 
+or sometimes we want just to upload work only when it's finished. 
+
+How do you do uploads and downloads?
+Using the huge potential of rsync.  
+
+INSTALL
+0. gDropboxCVS needs zenity in order to work. 
+   To install zenity in ubuntu: $sudo apt-get install zenity
+1. Be sure your Dropbox folder is correctly configured and active
+2. Create a "cvs" folder under your Dropbox folder (you can choose other name).
+3. (optional) Edit gDropbox.sh and specify your CVS folder, local folder and project name
+   so you won't need to specify them each run.
+
+Hint: Put this script under Dropbox cvs folder and you'll  can use the same config in 
+      all your machines!
+
+USAGE
+Just run gDropboxCVS clicking on it and follow the instructions
+
+LICENSE
+GPL v3.0 http://www.gnu.org/copyleft/gpl.html 
+You are free to coppy, distribute, modify, fork, bla, bla, bla...(you know all that stuff)

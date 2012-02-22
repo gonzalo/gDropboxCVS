@@ -1,0 +1,9 @@
+# TODO
+
+# test backup option 
+# check the existence of default folders / folders creation
+# new option: choose if wants to include hidden files
+# lookup for Dropbox folder automatically
+# save profiles (using sed to change gDropboxCVS.sh file)
+# use command basename to get project_name instead of manual input
+# use buttons instead of upload/download menu

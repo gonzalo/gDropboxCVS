@@ -38,20 +38,21 @@
 
 # CONFIG
 
-DROPBOX_CVS_FOLDER='/home/gonzalo/Dropbox/Proyectos/svn'
-LOCAL_FOLDER='/home/gonzalo/Documentos/workspace/gDropboxCVS'
-PROJECT_NAME='gDropboxCVS'
+DROPBOX_CVS_FOLDER='/home/user/Dropbox/cvs'
+LOCAL_FOLDER='/home/user/Documents/my_project'
+PROJECT_NAME='MyProject'
 SECURE_MODE="off" #"on" generates a compressed backup under cvs/backups/[PROJECT_NAME].tgz
 
 # CONFIGURATION SAMPLE
 # Imagine that your project it's under '/home/user/Documents/workspace/my_project'
 # and your CVS folder is under '/home/user/Dropbox/cvs' and you want to keep a backup copy
-# then your config should be:
+# then your config could be:
 #
 # DROPBOX_CVS_FOLDER='/home/user/Dropbox/cvs'
 # LOCAL_FOLDER='/home/user/Documents/workspace/my_project'
 # PROJECT_NAME='MyProject'
 # SECURE_MODE="on"
+
 
 # Advanced config
 
@@ -62,11 +63,6 @@ FIX_PERMISSIONS="off"
 
 
 # END OF CONFIG
-
-#TODO
-# check the existence of default folders / folders creation
-# new option: choose if wants to include hidden files
-# lookup for Dropbox folder automatically
 
 
 #beggining
